@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script  type="text/javascript">
+    let arr = [true, 1];
+    arr[0] = 12
+    arr[2] = "abc"
+    // alert(arr[1]);
+    // for (let i = 0; i < arr.length; i++) {
+    //   alert(arr[i])
+    // }
+
+    var sum = function (num1, num2) {
+      let res = 0;
+      for (let i = 0; i < arguments.length; i++) {
+        if (typeof arguments[i] == "number"){
+          res += arguments[i];
+        }
+      }
+      alert(res);
+    }
+
+    sum(1);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

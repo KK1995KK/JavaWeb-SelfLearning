@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>On Change</title>
+  <script type="text/javascript">
+    function onchangeFun() {
+      alert("Goddess has been changed")
+    }
+
+    window.onload = function () {
+      let obj = document.getElementById("select01");
+       obj.onchange = function () {
+         alert("onchange")
+       }
+    }
+  </script>
+</head>
+<body>
+  Select goddess
+  <select onchange="onchangeFun();">
+    <option>--女神--</option>
+    <option>aa</option>
+    <option>bb</option>
+    <option>cc</option>
+  </select><br/>
+  Select one thing
+  <select id="select01">
+    <option>--select--</option>
+    <option>aa</option>
+    <option>bb</option>
+    <option>cc</option>
+  </select>
+</body>
+</html>

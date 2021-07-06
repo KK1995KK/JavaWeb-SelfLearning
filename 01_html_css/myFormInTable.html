@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form in Table</title>
+</head>
+<body>
+<form action="http://localhost:8080" method="post">
+  <input type="hidden" name="aciton" value="login"/>
+  <h1 align="center">用户注册</h1>
+  <table align="center">
+    <tr>
+      <td>用户名称：</td>
+      <td><input type="text" name="username" value="默认值"/></td>
+    </tr>
+    <tr>
+      <td>用户密码：</td>
+      <td><input type="password" name="password" value="abc"/></td>
+    </tr>
+    <tr>
+      <td>确认密码：</td>
+      <td><input type="password" value="abc"/></td>
+    </tr>
+    <tr>
+      <td>性别：</td>
+      <td>
+        <input type="radio" value="male" name="sex"/>男
+        <input type="radio" value="female" name="sex" checked="checked">女
+      </td>
+    </tr>
+    <tr>
+      <td>兴趣爱好：</td>
+      <td>
+        <input type="checkbox" name="hobby" checked="checked" value="java"/>Java
+        <input type="checkbox" name="hobby" checked="checked" value="Javascript"/>JavaScript
+        <input type="checkbox" name="hobby" value="cpp"/>Cpp
+      </td>
+    </tr>
+    <tr>
+      <td>国籍：</td>
+      <td>
+        <select name="country">
+          <option value="none">---请选择国际---</option>
+          <option value="cn">中国</option>
+          <option value="usa">美国</option>
+          <option value="jpa">日本</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>自我评价：</td>
+      <td>
+        <textarea name="self-desc" rows="10" cols="20">默认值</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="reset"/></td>
+      <td align="center"><input type="submit"/></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

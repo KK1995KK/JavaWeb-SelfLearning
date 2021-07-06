@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onsubmit</title>
+    <script type="text/javascript">
+        function onSubmitFunc() {
+            alert("Going to Baidu...")
+            return false;
+        }
+    </script>
+</head>
+<body>
+<form action="http://www.baidu.com" method="get" onsubmit="return onSubmitFunc();">
+  <input type="submit" value="submit">
+</form>
+</body>
+</html>
